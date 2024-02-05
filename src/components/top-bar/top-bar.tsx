@@ -1,6 +1,7 @@
 import React from 'react';
 import {Bell, Menu, User} from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const TopBar = () => {
     const avatarUrl = '';
@@ -10,11 +11,11 @@ const TopBar = () => {
             <div className="flex items-center gap-4">
                 <Menu size={24} className="text-gray-600"/>
             </div>
-            <div>
+            <Link href='/'>
                 <Image src={'/images/logo.svg'} alt={'YachtWat'}
                 width={150} height={40}
                 />
-            </div>
+            </Link>
             <div className="flex items-center gap-4">
                 <div className="relative">
                     <Bell className="h-6 w-6 text-gray-600" size={24}/>
